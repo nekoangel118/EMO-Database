@@ -35,4 +35,5 @@ jobs:
         git config --global user.email "actions@github.com"
         git add metadata/emo2026-database.txt
         git commit -m "Auto-update metadata" || echo "No changes to commit"
+        git pull --rebase
         git push

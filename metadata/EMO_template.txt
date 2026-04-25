@@ -1,1 +1,3 @@
+# EMO Metadata Template
+# Used by generate_metadata.py to produce metadata.
 

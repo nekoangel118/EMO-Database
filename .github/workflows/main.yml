@@ -1,0 +1,38 @@
+name: Generate Metadata
+
+on:
+  push:
+    paths:
+      - "data/**"
+      - "scripts/**"
+      - "metadata/EMO_template.txt"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.10"
+
+    - name: Install dependencies
+      run: |
+        pip install pandas
+
+    - name: Run metadata generator
+      run: |
+        python "scripts/metadata generation.py"
+
+    - name: Commit updated metadata
+      run: |
+        git config --global user.name "github-actions"
+        git config --global user.email "actions@github.com"
+        git add metadata/emo2026-database.txt
+        git commit -m "Auto-update metadata" || echo "No changes to commit"
+        git push

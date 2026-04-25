@@ -5,7 +5,6 @@ on:
     paths:
       - "data/**"
       - "scripts/**"
-      - "metadata/**.txt"
   workflow_dispatch:
 
 jobs:

@@ -5,7 +5,7 @@ on:
     paths:
       - "data/**"
       - "scripts/**"
-      - "metadata/**.txt"
+      - "metadata/*.txt"
   workflow_dispatch:
 
 jobs:
@@ -15,6 +15,9 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
+      with:
+        ref: main
+        fetch-depth: 0
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -37,10 +40,8 @@ jobs:
         git add metadata/*.txt
         git commit -m "Auto-update metadata" || echo "No changes to commit"
 
-        # 必须先 fetch，否则 pull 会失败
         git fetch origin
-
-        # 必须指定 origin main，否则 GitHub Actions 不知道 pull 哪个分支
         git pull --rebase origin main || echo "No remote changes to rebase"
 
         git push origin main
+

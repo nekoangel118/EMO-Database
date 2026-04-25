@@ -5,7 +5,7 @@ on:
     paths:
       - "data/**"
       - "scripts/**"
-      - "metadata/*.txt"
+      - "metadata/**.txt"
   workflow_dispatch:
 
 jobs:
@@ -40,7 +40,11 @@ jobs:
         git add metadata/*.txt
         git commit -m "Auto-update metadata" || echo "No changes to commit"
 
-        git push
+        git fetch origin
+        git pull --rebase origin main || echo "No remote changes to rebase"
+
+        git push origin main
+
 
     
 

@@ -3,8 +3,8 @@ Eocene Marine Ostracod Database (EMO)
 
 This repository contains:
 - data include occurence record, taxonomy list and reference list.
-- Scripts for metadata, plots generation and data analysis.
+- scripts for metadata, plots generation and data analysis.
 - metadata of EMO.
-- Changelog for version tracking.
+- CHANGLOG for version tracking.
 
 The database is under active development.

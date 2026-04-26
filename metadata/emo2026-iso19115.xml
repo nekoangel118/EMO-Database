@@ -1,0 +1,183 @@
+<gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd"
+                 xmlns:gco="http://www.isotc211.org/2005/gco"
+                 xmlns:gml="http://www.opengis.net/gml"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <!-- File identifier -->
+  <gmd:fileIdentifier>
+    <gco:CharacterString>emo-database-2026</gco:CharacterString>
+  </gmd:fileIdentifier>
+
+  <!-- Language -->
+  <gmd:language>
+    <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/"
+                      codeListValue="eng">English</gmd:LanguageCode>
+  </gmd:language>
+
+  <!-- Character set -->
+  <gmd:characterSet>
+    <gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_CharacterSetCode"
+                             codeListValue="utf8"/>
+  </gmd:characterSet>
+
+  <!-- Contact -->
+  <gmd:contact>
+    <gmd:CI_ResponsibleParty>
+      <gmd:individualName>
+        <gco:CharacterString>Jingwen Zhang</gco:CharacterString>
+      </gmd:individualName>
+      <gmd:organisationName>
+        <gco:CharacterString>Eocene Marine Ostracod Database (EMO)</gco:CharacterString>
+      </gmd:organisationName>
+      <gmd:role>
+        <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_RoleCode"
+                         codeListValue="originator"/>
+      </gmd:role>
+    </gmd:CI_ResponsibleParty>
+  </gmd:contact>
+
+  <!-- Date stamp -->
+  <gmd:dateStamp>
+    <gco:Date>2026-04-26</gco:Date>
+  </gmd:dateStamp>
+
+  <!-- Identification info -->
+  <gmd:identificationInfo>
+    <gmd:MD_DataIdentification>
+
+      <gmd:citation>
+        <gmd:CI_Citation>
+          <gmd:title>
+            <gco:CharacterString>Eocene Marine Ostracod Database (EMO)</gco:CharacterString>
+          </gmd:title>
+          <gmd:date>
+            <gmd:CI_Date>
+              <gmd:date><gco:Date>2026-01-01</gco:Date></gmd:date>
+              <gmd:dateType>
+                <gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode"
+                                     codeListValue="creation"/>
+              </gmd:dateType>
+            </gmd:CI_Date>
+          </gmd:date>
+        </gmd:CI_Citation>
+      </gmd:citation>
+
+      <gmd:abstract>
+        <gco:CharacterString>
+          The Eocene Marine Ostracod Database (EMO) compiles taxonomy, occurrence records, 
+          and reference information for marine ostracods from the Eocene epoch. 
+          The dataset is distributed as curated CSV files (taxonomy_info, occurrence_record, 
+          reference_list) under the MIT License and maintained in a version-controlled 
+          GitHub repository. The database is designed to support reproducible paleobiological 
+          and stratigraphic research and includes explicit documentation of spatial 
+          uncertainty and data lineage.
+        </gco:CharacterString>
+      </gmd:abstract>
+
+      <gmd:purpose>
+        <gco:CharacterString>
+          To provide an open-access, reproducible database for Eocene marine ostracod 
+          taxonomy and occurrences, enabling transparent scientific reuse and long-term 
+          data preservation.
+        </gco:CharacterString>
+      </gmd:purpose>
+
+      <!-- Keywords -->
+      <gmd:descriptiveKeywords>
+        <gmd:MD_Keywords>
+          <gmd:keyword><gco:CharacterString>ostracods</gco:CharacterString></gmd:keyword>
+          <gmd:keyword><gco:CharacterString>Eocene</gco:CharacterString></gmd:keyword>
+          <gmd:keyword><gco:CharacterString>paleobiology</gco:CharacterString></gmd:keyword>
+          <gmd:keyword><gco:CharacterString>taxonomy</gco:CharacterString></gmd:keyword>
+          <gmd:keyword><gco:CharacterString>marine microfossils</gco:CharacterString></gmd:keyword>
+        </gmd:MD_Keywords>
+      </gmd:descriptiveKeywords>
+
+      <!-- Topic category -->
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>geoscientificInformation</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+
+      <!-- Spatial extent (global placeholder; can be replaced with real bounding box later) -->
+      <gmd:extent>
+        <gmd:EX_Extent>
+          <gmd:geographicElement>
+            <gmd:EX_GeographicBoundingBox>
+              <gmd:westBoundLongitude><gco:Decimal>-180</gco:Decimal></gmd:westBoundLongitude>
+              <gmd:eastBoundLongitude><gco:Decimal>180</gco:Decimal></gmd:eastBoundLongitude>
+              <gmd:southBoundLatitude><gco:Decimal>-90</gco:Decimal></gmd:southBoundLatitude>
+              <gmd:northBoundLatitude><gco:Decimal>90</gco:Decimal></gmd:northBoundLatitude>
+            </gmd:EX_GeographicBoundingBox>
+          </gmd:geographicElement>
+        </gmd:EX_Extent>
+      </gmd:extent>
+
+    </gmd:MD_DataIdentification>
+  </gmd:identificationInfo>
+
+  <!-- Distribution info -->
+  <gmd:distributionInfo>
+    <gmd:MD_Distribution>
+      <gmd:transferOptions>
+        <gmd:MD_DigitalTransferOptions>
+          <gmd:onLine>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage>
+                <gmd:URL>https://github.com/nekoangel118/EMO-Database</gmd:URL>
+              </gmd:linkage>
+              <gmd:name>
+                <gco:CharacterString>EMO Database GitHub Repository</gco:CharacterString>
+              </gmd:name>
+              <gmd:description>
+                <gco:CharacterString>
+                  Repository containing EMO CSV data files, metadata, scripts, and documentation.
+                </gco:CharacterString>
+              </gmd:description>
+            </gmd:CI_OnlineResource>
+          </gmd:onLine>
+        </gmd:MD_DigitalTransferOptions>
+      </gmd:transferOptions>
+
+      <!-- License -->
+      <gmd:distributionFormat>
+        <gmd:MD_Format>
+          <gmd:name><gco:CharacterString>MIT License</gco:CharacterString></gmd:name>
+          <gmd:version><gco:CharacterString>2026</gco:CharacterString></gmd:version>
+        </gmd:MD_Format>
+      </gmd:distributionFormat>
+
+    </gmd:MD_Distribution>
+  </gmd:distributionInfo>
+
+  <!-- Data quality info (final DQ version) -->
+  <gmd:dataQualityInfo>
+    <gmd:DQ_DataQuality>
+      <gmd:scope>
+        <gmd:DQ_Scope>
+          <gmd:level>
+            <gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_ScopeCode"
+                              codeListValue="dataset"/>
+          </gmd:level>
+        </gmd:DQ_Scope>
+      </gmd:scope>
+
+      <gmd:lineage>
+        <gmd:LI_Lineage>
+          <gmd:statement>
+            <gco:CharacterString>
+              Geographic coordinates in the occurrence_record.csv file are approximate. 
+              Many locations were visually estimated from published maps and may contain 
+              positional uncertainty ranging from several kilometers to regional-scale 
+              imprecision. Some records lack precise coordinates due to limitations in 
+              the original literature. These coordinates are included to provide general 
+              spatial context and may be refined in future updates of the EMO Database. 
+              Users should not treat these coordinates as precise sampling locations.
+            </gco:CharacterString>
+          </gmd:statement>
+        </gmd:LI_Lineage>
+      </gmd:lineage>
+
+    </gmd:DQ_DataQuality>
+  </gmd:dataQualityInfo>
+
+</gmd:MD_Metadata>

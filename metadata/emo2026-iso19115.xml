@@ -8,17 +8,24 @@
     <gco:CharacterString>emo-database-2026</gco:CharacterString>
   </gmd:fileIdentifier>
 
-  <!-- Language -->
+  <!-- Language (Workbook: eng; USA) -->
   <gmd:language>
-    <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/"
-                      codeListValue="eng">English</gmd:LanguageCode>
+    <gco:CharacterString>eng; USA</gco:CharacterString>
   </gmd:language>
 
   <!-- Character set -->
   <gmd:characterSet>
-    <gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_CharacterSetCode"
-                             codeListValue="utf8"/>
+    <gmd:MD_CharacterSetCode 
+      codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_CharacterSetCode"
+      codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
   </gmd:characterSet>
+
+  <!-- Hierarchy level (dataset) -->
+  <gmd:hierarchyLevel>
+    <gmd:MD_ScopeCode 
+      codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_ScopeCode"
+      codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+  </gmd:hierarchyLevel>
 
   <!-- Contact -->
   <gmd:contact>
@@ -30,8 +37,9 @@
         <gco:CharacterString>Eocene Marine Ostracod Database (EMO)</gco:CharacterString>
       </gmd:organisationName>
       <gmd:role>
-        <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_RoleCode"
-                         codeListValue="originator"/>
+        <gmd:CI_RoleCode 
+          codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_RoleCode"
+          codeListValue="originator">originator</gmd:CI_RoleCode>
       </gmd:role>
     </gmd:CI_ResponsibleParty>
   </gmd:contact>
@@ -40,6 +48,41 @@
   <gmd:dateStamp>
     <gco:Date>2026-04-26</gco:Date>
   </gmd:dateStamp>
+
+  <!-- Metadata standard -->
+  <gmd:metadataStandardName>
+    <gco:CharacterString>ISO 19115-1 Geographic Information — Metadata</gco:CharacterString>
+  </gmd:metadataStandardName>
+  <gmd:metadataStandardVersion>
+    <gco:CharacterString>ISO 19115-1:2014(E)</gco:CharacterString>
+  </gmd:metadataStandardVersion>
+
+  <!-- Reference system info (EPSG:4326, required if you use lat/lon) -->
+  <gmd:referenceSystemInfo>
+    <gmd:MD_ReferenceSystem>
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gco:CharacterString>EPSG:4326</gco:CharacterString>
+          </gmd:code>
+          <gmd:codeSpace>
+            <gco:CharacterString>EPSG</gco:CharacterString>
+          </gmd:codeSpace>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+
+  <!-- Spatial representation info (vector points) -->
+  <gmd:spatialRepresentationInfo>
+    <gmd:MD_VectorSpatialRepresentation>
+      <gmd:topologyLevel>
+        <gmd:MD_TopologyLevelCode
+          codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_TopologyLevelCode"
+          codeListValue="geometryOnly">geometryOnly</gmd:MD_TopologyLevelCode>
+      </gmd:topologyLevel>
+    </gmd:MD_VectorSpatialRepresentation>
+  </gmd:spatialRepresentationInfo>
 
   <!-- Identification info -->
   <gmd:identificationInfo>
@@ -54,8 +97,9 @@
             <gmd:CI_Date>
               <gmd:date><gco:Date>2026-01-01</gco:Date></gmd:date>
               <gmd:dateType>
-                <gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode"
-                                     codeListValue="creation"/>
+                <gmd:CI_DateTypeCode 
+                  codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode"
+                  codeListValue="creation">creation</gmd:CI_DateTypeCode>
               </gmd:dateType>
             </gmd:CI_Date>
           </gmd:date>
@@ -98,7 +142,16 @@
         <gmd:MD_TopicCategoryCode>geoscientificInformation</gmd:MD_TopicCategoryCode>
       </gmd:topicCategory>
 
-      <!-- Spatial extent (global placeholder; can be replaced with real bounding box later) -->
+      <!-- Resource constraints: MIT License -->
+      <gmd:resourceConstraints>
+        <gmd:MD_LegalConstraints>
+          <gmd:useLimitation>
+            <gco:CharacterString>MIT License</gco:CharacterString>
+          </gmd:useLimitation>
+        </gmd:MD_LegalConstraints>
+      </gmd:resourceConstraints>
+
+      <!-- Spatial extent (global for now;可以后换成真实 bounding box) -->
       <gmd:extent>
         <gmd:EX_Extent>
           <gmd:geographicElement>
@@ -138,25 +191,27 @@
         </gmd:MD_DigitalTransferOptions>
       </gmd:transferOptions>
 
-      <!-- License -->
+      <!-- License as format info -->
       <gmd:distributionFormat>
         <gmd:MD_Format>
           <gmd:name><gco:CharacterString>MIT License</gco:CharacterString></gmd:name>
-          <gmd:version><gco:CharacterString>2026</gco:CharacterString></gmd:version>
+          <gmd:version><gco:CharacterString>2026</gco:CharacterString>
+          </gmd:version>
         </gmd:MD_Format>
       </gmd:distributionFormat>
 
     </gmd:MD_Distribution>
   </gmd:distributionInfo>
 
-  <!-- Data quality info (final DQ version) -->
+  <!-- Data quality info -->
   <gmd:dataQualityInfo>
     <gmd:DQ_DataQuality>
       <gmd:scope>
         <gmd:DQ_Scope>
           <gmd:level>
-            <gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_ScopeCode"
-                              codeListValue="dataset"/>
+            <gmd:MD_ScopeCode 
+              codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_ScopeCode"
+              codeListValue="dataset">dataset</gmd:MD_ScopeCode>
           </gmd:level>
         </gmd:DQ_Scope>
       </gmd:scope>
@@ -179,5 +234,16 @@
 
     </gmd:DQ_DataQuality>
   </gmd:dataQualityInfo>
+
+  <!-- Metadata maintenance (optional but nice) -->
+  <gmd:metadataMaintenance>
+    <gmd:MD_MaintenanceInformation>
+      <gmd:maintenanceAndUpdateFrequency>
+        <gmd:MD_MaintenanceFrequencyCode
+          codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_MaintenanceFrequencyCode"
+          codeListValue="asNeeded">asNeeded</gmd:MD_MaintenanceFrequencyCode>
+      </gmd:maintenanceAndUpdateFrequency>
+    </gmd:MD_MaintenanceInformation>
+  </gmd:metadataMaintenance>
 
 </gmd:MD_Metadata>

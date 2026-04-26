@@ -23,30 +23,40 @@
   </gmd:hierarchyLevel>
 
   <!-- Contact (Metadata Point of Contact) -->
-  <gmd:contact>
-    <gmd:CI_ResponsibleParty>
-      <gmd:individualName>
-        <gco:CharacterString>Jingwen Zhang</gco:CharacterString>
-      </gmd:individualName>
-      <gmd:organisationName>
-        <gco:CharacterString>Massachusetts Institute of Technology (MIT)</gco:CharacterString>
-      </gmd:organisationName>
-      <gmd:contactInfo>
-        <gmd:CI_Contact>
-          <gmd:address>
-            <gmd:CI_Address>
-              <gmd:electronicMailAddress>
-                <gco:CharacterString>jingw118@mit.edu</gco:CharacterString>
-              </gmd:electronicMailAddress>
-            </gmd:CI_Address>
-          </gmd:address>
-        </gmd:CI_Contact>
-      </gmd:contactInfo>
-      <gmd:role>
-        <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_RoleCode" codeListValue="pointOfContact"/>
-      </gmd:role>
-    </gmd:CI_ResponsibleParty>
-  </gmd:contact>
+ <gmd:contact>
+  <gmd:CI_ResponsibleParty>
+    <gmd:individualName>
+      <gco:CharacterString>Jingwen Zhang</gco:CharacterString>
+    </gmd:individualName>
+
+    <gmd:organisationName>
+      <gco:CharacterString>MIT–WHOI Joint Program</gco:CharacterString>
+    </gmd:organisationName>
+
+    <gmd:positionName>
+      <gco:CharacterString>Student</gco:CharacterString>
+    </gmd:positionName>
+
+    <gmd:contactInfo>
+      <gmd:CI_Contact>
+        <gmd:address>
+          <gmd:CI_Address>
+            <gmd:electronicMailAddress>
+              <gco:CharacterString>jingw118@mit.edu</gco:CharacterString>
+            </gmd:electronicMailAddress>
+          </gmd:CI_Address>
+        </gmd:address>
+      </gmd:CI_Contact>
+    </gmd:contactInfo>
+
+    <gmd:role>
+      <gmd:CI_RoleCode 
+        codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_RoleCode"
+        codeListValue="pointOfContact">pointOfContact</gmd:CI_RoleCode>
+    </gmd:role>
+  </gmd:CI_ResponsibleParty>
+</gmd:contact>
+
 
   <!-- Date -->
   <gmd:dateStamp>
@@ -55,11 +65,11 @@
 
   <!-- Metadata Standard -->
   <gmd:metadataStandardName>
-    <gco:CharacterString>ISO 19115-2 Geographic Information - Metadata Part 2</gco:CharacterString>
+    <gco:CharacterString>ISO 19115-2 Geographic Information - Metadata Part 2:Extensions for Imagery and Gridded Data</gco:CharacterString>
   </gmd:metadataStandardName>
 
   <gmd:metadataStandardVersion>
-    <gco:CharacterString>ISO 19115-2:2009</gco:CharacterString>
+    <gco:CharacterString>ISO 19115-2:2009:E</gco:CharacterString>
   </gmd:metadataStandardVersion>
 
   <!-- Identification Info -->
@@ -86,7 +96,7 @@
 
       <gmd:abstract>
         <gco:CharacterString>
-          The EMO database compiles Eocene marine ostracode records from multiple sources including the Paleobiology Database (PBDB), World Register of Marine Species (WoRMS), published literature, and original datasets. The database provides standardized taxonomic, spatial, and temporal information to support paleoecological and macroevolutionary analyses.
+          The EMO database compiles Eocene marine ostracode records from multiple sources including the Paleobiology Database (PBDB), World Register of Marine Species (WoRMS), online publications, non-digital publication and primary data datasets. The database provides standardized taxonomic, spatial, and ecological information to support paleobiological, paleoecological and macroevolutionary analyses.
         </gco:CharacterString>
       </gmd:abstract>
 
@@ -108,7 +118,7 @@
 
       <!-- Topic Category -->
       <gmd:topicCategory>
-        <gmd:MD_TopicCategoryCode>geoscientificInformation</gmd:MD_TopicCategoryCode>
+        <gmd:MD_TopicCategoryCode>biota</gmd:MD_TopicCategoryCode>
       </gmd:topicCategory>
 
       <!-- Extent -->
@@ -130,8 +140,8 @@
             <gmd:EX_TemporalExtent>
               <gmd:extent>
                 <gml:TimePeriod>
-                  <gml:beginPosition>56</gml:beginPosition>
-                  <gml:endPosition>33.9</gml:endPosition>
+                  <gml:beginPosition>56 Ma</gml:beginPosition>
+                  <gml:endPosition>33.9 Ma</gml:endPosition>
                 </gml:TimePeriod>
               </gmd:extent>
             </gmd:EX_TemporalExtent>

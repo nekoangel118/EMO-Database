@@ -5,7 +5,7 @@ This repository contains:
 - .github include the workflow files.
 - data include occurence record, taxonomy list and reference list.
 - docs include the EMO Data Dictionary and Data Entry Guide, and the Methodology.
-- exports include a machine readable txt version of data (NOAA/NCEI-style), data ready to be submitted to PBDB, and data ready to be submitted to WOD.
+- exports include a machine readable txt version of data (NOAA/NCEI-style), data ready to be submitted to PBDB (the occurence record data). The taxon data included in EMO will be submitted to WoRMS in the future.
 - metadata of EMO.
 - scripts for metadata, plots generation and data analysis.
 - CHANGLOG for version tracking.

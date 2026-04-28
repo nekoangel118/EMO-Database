@@ -67,16 +67,6 @@ Describes how EMO data are converted into different output formats.
 
 ---
 
-### 2.3 WOD‑Ready Conversion
-**Purpose:** Prepare EMO taxonomy for submission to the World Ostracoda Database (WOD).  
-**Process:**
-- Match taxon names with AphiaID, accepted names, and authorities.
-- Format fields according to WOD requirements.
-- Export outputs to `exports/wod/`.
-- Managed by a separate workflow (`wod.yml`).
-
----
-
 ## 3. Version Control & Automation
 - All conversion scripts stored in `scripts/`.
 - All automated processes handled by GitHub Actions.

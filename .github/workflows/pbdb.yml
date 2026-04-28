@@ -1,0 +1,33 @@
+name: Generate PBDB-ready files
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-pbdb:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.10"
+
+    - name: Install dependencies
+      run: |
+        pip install pandas
+
+    - name: Run PBDB conversion script
+      run: |
+        python scripts/convert_to_pbdb.py
+
+    - name: Commit PBDB-ready files
+      run: |
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@github.com"
+        git add exports/pbdb/*.txt
+        git commit -m "Update PBDB-ready exports" || echo "No changes to commit"
+        git push

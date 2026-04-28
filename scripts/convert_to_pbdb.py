@@ -11,9 +11,9 @@ output_dir = Path("exports/pbdb")
 output_dir.mkdir(parents=True, exist_ok=True)
 
 # === Load EMO data ===
-occurrence = pd.read_csv(data_dir / "occurrence_record.csv")
-taxonomy = pd.read_csv(data_dir / "taxonomy_info.csv")
-reference = pd.read_csv(data_dir / "reference_list.csv")
+occurrence = pd.read_csv(data_dir / "EMO_Database - occurrence_record.csv")
+taxonomy = pd.read_csv(data_dir / "EMO_Database - taxonomy_info.csv")
+reference = pd.read_csv(data_dir / "EMO_Database - reference_list.csv")
 
 # === Mapping dictionaries ===
 pbdb_occurrence_mapping = {

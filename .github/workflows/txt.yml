@@ -29,7 +29,7 @@ jobs:
 
     - name: Run metadata generator
       run: |
-        python "scripts/metadata generation.py"
+        python "scripts/txt_generation.py"
 
     - name: Commit updated metadata
       run: |

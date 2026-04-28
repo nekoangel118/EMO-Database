@@ -1,4 +1,4 @@
-name: Generate Metadata
+name: Generate txt version of data
 
 on:
   push:

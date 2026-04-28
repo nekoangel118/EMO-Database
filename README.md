@@ -1,5 +1,5 @@
 # EMO Database
-Eocene Marine Ostracod Database (EMO)
+Welcome to Eocene Marine Ostracod Database (EMO).
 
 This repository contains:
 - .github include the workflow files.

@@ -1,6 +1,6 @@
-EMO Data Dictionary and Data Entry Guide 
+# EMO Data Dictionary and Data Entry Guide 
 
-Occurrence_record 
+## Occurrence_record 
 
 ORID: A unique identifier assigned to each occurrence record in EMO.
 
@@ -78,7 +78,7 @@ Source File: The File name that contributes to the occurrence record.
 
 Remarks: Any supplementary related to the occurrence record.	
 
-Taxonomy_info 
+## Taxonomy_info 
 
 Taxon name: Taxon names include all species and subspecies-level taxon in the Occurrence_record. In the current version, names originally recorded as “sp.” or “spp.” in the source publications are standardized as “sp.”; Taxa marked as “aff.” or “cf.” are marked and provisionally assigned to the corresponding species; After the review, taxon names may be reassigned so that each (sub)species has a corresponding taxon name.
 
@@ -97,7 +97,8 @@ Identifier: The formal taxonomic authority adopted by WOD at the time of data co
 Description: The Original description text provided in WOD. When WOD does not include an original description, the value is recorded as “na”.
 	
 Remarks: Any supplementary related to the taxa regarding its systematic taxonomy.				
-Reference_list	
+
+## Reference_list	
 
 File name: A unique name of the source publication using a uniform naming format “author_year_title”, same as the name of its PDF file.
 	

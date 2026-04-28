@@ -31,7 +31,7 @@ def build_header(description):
 
 # === Output 1: Reference List ===
 ref_header = build_header("Reference list extracted from EMO reference_list.csv.")
-ref_output = "metadata/emo2026-reference-list.txt"
+ref_output = "exports/emo2026-reference-list.txt"
 
 with open(ref_output, "w", encoding="utf-8") as f:
     f.write(ref_header)
@@ -41,7 +41,7 @@ print(f"Generated: {ref_output}")
 
 # === Output 2: Occurrence Record ===
 occ_header = build_header("Occurrence records extracted from EMO occurrence_record.csv.")
-occ_output = "metadata/emo2026-occurrence-record.txt"
+occ_output = "exports/emo2026-occurrence-record.txt"
 
 with open(occ_output, "w", encoding="utf-8") as f:
     f.write(occ_header)
@@ -51,7 +51,7 @@ print(f"Generated: {occ_output}")
 
 # === Output 3: Taxonomy List ===
 tax_header = build_header("Taxonomy information extracted from EMO taxonomy_info.csv.")
-tax_output = "metadata/emo2026-taxonomy-list.txt"
+tax_output = "exports/emo2026-taxonomy-list.txt"
 
 with open(tax_output, "w", encoding="utf-8") as f:
     f.write(tax_header)

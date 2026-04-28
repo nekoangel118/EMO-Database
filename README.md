@@ -8,7 +8,7 @@ This repository contains:
 - exports include a machine readable txt version of data (NOAA/NCEI-style), data ready to be submitted to PBDB (the occurence record data). The taxon data included in EMO will be submitted to WoRMS in the future.
 - metadata of EMO.
 - scripts for metadata, plots generation and data analysis.
-- CHANGLOG for version tracking.
+- CHANGELOG for version tracking.
 - LICENSE of EMO.
 - README introducing the structure of EMO.
 

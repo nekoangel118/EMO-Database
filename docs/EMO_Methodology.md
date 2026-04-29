@@ -50,7 +50,7 @@ Describes how EMO data are converted into different output formats.
 - Read the three EMO tables.
 - Apply formatting and field‑cleaning rules.
 - Export outputs to `exports/txt/` using `metadata_generation.py`.
-- Automated through GitHub Actions workflow (`main.yml`).
+- Automated through GitHub Actions workflow (`txt.yml`).
 
 ---
 

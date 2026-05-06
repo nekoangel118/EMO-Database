@@ -2,9 +2,9 @@
 
 ## Occurrence_record 
 
-ORID: A unique identifier assigned to each occurrence record in EMO.
+occurrenceID: A unique identifier assigned to each occurrence record in EMO.
 
-Accepted Name: Final taxon name assigned after the taxa in the occurrence record. Currently blank; values will be added once the revised taxonomy list is completed.
+acceptedNameUsage: Final taxon name assigned after the taxa in the occurrence record. Currently blank; values will be added once the revised taxonomy list is completed.
 
 Superorder：A superorder is a taxonomic rank above order and below class，following the classification reported in the source publication of the occurrence record. 
 
